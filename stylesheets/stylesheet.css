@@ -270,7 +270,72 @@ Full-Width Styles
   padding: 20px 10px;
   margin: 0 auto;
 }
+/*开始我的导航代码  这是一个二级导航*/
+#top_nav{
+  padding-top: 0px;
+}
 
+.top_l1_nav {
+  width: 484px;
+  list-style:none;
+  height:30px;
+  border-bottom:10px solid #F60;
+  padding-left: 0;
+}
+
+.top_l1_nav > li {
+  float: left;
+}
+
+.top_l1_nav >li >a{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ccc;
+  display:block;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  width:120px;
+  background:url(../images/navBg.png);
+  margin-right: 1px;
+  color: #333;
+}
+
+.top_l2_nav {
+  position: absolute;
+  width: 100px;
+  height:0;
+  overflow: hidden;
+  text-decoration: none;
+  list-style: none;
+  margin-left: -20px;
+  z-index: 2;
+}
+
+.top_l2_nav li a{
+  background-color: #ccc;
+  display:block;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  width:120px;
+  margin-right: 1px;
+  color: #333;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  padding-top: 1px;
+}
+
+.top_l2_nav li a:hover{
+  background-color: #F60;
+}
+
+.top_l1_nav >li >a.on, .top_l1_nav li a:hover{
+  background-position:0 -30px;
+  color:#fff;
+  text-decoration: none;
+}
+/*结束*/
 #forkme_banner {
   display: block;
   position: absolute;
